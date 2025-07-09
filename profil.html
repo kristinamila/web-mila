@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Kristina Mila</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f6d2ff, #d1b3ff);
+      color: #4a004e;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: #fff0fc;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 25px rgba(154, 74, 160, 0.3);
+      text-align: center;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #d45fff;
+      box-shadow: 0 6px 15px rgba(154, 74, 160, 0.4);
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #8e2de2;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #c940a7;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .profile-list {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .profile-list li {
+      background-color: #fce3ff;
+      margin: 10px 0;
+      padding: 15px;
+      border-left: 6px solid #d45fff;
+      border-radius: 10px;
+      font-weight: 500;
+      color: #520b5b;
+    }
+
+    .gallery-section {
+      margin-top: 60px;
+    }
+
+    .gallery-section h2 {
+      color: #b82fc4;
+      margin-bottom: 25px;
+      font-size: 1.8em;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 0 10px;
+    }
+
+    .gallery-item {
+      background: #ffffff;
+      border: 6px solid #f9ccff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(154, 74, 160, 0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-item:hover {
+      animation: float 2.5s ease-in-out infinite;
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(154, 74, 160, 0.45);
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 60%;
+      max-height: 60%;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    .btn-kembali {
+      display: inline-block;
+      margin-top: 40px;
+      background-color: #d94eff;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-kembali:hover {
+      background-color: #b43ed0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #8b589c;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="img/profil.jpeg" alt="Foto Kristina Mila" class="profile-pic">
+
+    <h1>Hai, Saya Kristina Mila</h1>
+    <h2>Mahasiswi Rekayasa Komputer di ITKK Sekadau</h2>
+    <p>
+      Saya berasal dari Sekadau dan saat ini sedang menempuh pendidikan di Institut Teknologi Keling Kumang.
+      Website ini saya buat sebagai bentuk kepedulian saya terhadap budaya Dayak Ketungau Tesaek yang mulai jarang dikenal oleh generasi muda. 
+      Budaya ini sangat kaya—meliputi bahasa, adat, upacara, seni ukir, hingga kepercayaan leluhur yang diwariskan turun-temurun.
+    </p>
+
+    <h2>Profil Singkat</h2>
+    <ul class="profile-list">
+      <li><strong>Nama:</strong> Kristina Mila</li>
+      <li><strong>Tanggal Lahir:</strong> 16 Januari 2005</li>
+      <li><strong>Alamat:</strong> Jln Keling Kumang</li>
+      <li><strong>Hobby:</strong> Menyanyi</li>
+      <li><strong>Cita-cita:</strong> Pengusaha</li>
+      <li><strong>Status:</strong> Mahasiswi</li>
+      <li><strong>SD:</strong> SDN 17 Mungguk Sekadau Hilir</li>
+      <li><strong>SMP:</strong> SMPN 1 Sekadau Hilir</li>
+      <li><strong>SMA:</strong> SMAN 1 Sekadau</li>
+      <li><strong>Kuliah:</strong> ITKK Sekadau</li>
+    </ul>
+
+    <!-- Galeri Foto -->
+    <section class="gallery-section">
+      <h2>Galeri Foto</h2>
+      <div class="gallery">
+        <a href="#img1" class="gallery-item"><img src="img/galeri1.jpeg" alt="Galeri 1"></a>
+        <a href="#img2" class="gallery-item"><img src="img/galeri2.jpeg" alt="Galeri 2"></a>
+        <a href="#img3" class="gallery-item"><img src="img/galeri3.jpeg" alt="Galeri 3"></a>
+        <a href="#img4" class="gallery-item"><img src="img/galeri4.jpeg" alt="Galeri 4"></a>
+        <a href="#img5" class="gallery-item"><img src="img/galeri5.jpeg" alt="Galeri 5"></a>
+        <a href="#img6" class="gallery-item"><img src="img/galeri6.jpeg" alt="Galeri 6"></a>
+        <a href="#img7" class="gallery-item"><img src="img/galeri7.jpeg" alt="Galeri 7"></a>
+        <a href="#img8" class="gallery-item"><img src="img/galeri8.jpeg" alt="Galeri 8"></a>
+      </div>
+    </section>
+
+    <!-- Lightbox Gambar -->
+    <div id="img1" class="lightbox"><a href="#"><img src="img/galeri1.jpeg" alt="Zoom 1"></a></div>
+    <div id="img2" class="lightbox"><a href="#"><img src="img/galeri2.jpeg" alt="Zoom 2"></a></div>
+    <div id="img3" class="lightbox"><a href="#"><img src="img/galeri3.jpeg" alt="Zoom 3"></a></div>
+    <div id="img4" class="lightbox"><a href="#"><img src="img/galeri4.jpeg" alt="Zoom 4"></a></div>
+    <div id="img5" class="lightbox"><a href="#"><img src="img/galeri5.jpeg" alt="Zoom 5"></a></div>
+    <div id="img6" class="lightbox"><a href="#"><img src="img/galeri6.jpeg" alt="Zoom 6"></a></div>
+    <div id="img7" class="lightbox"><a href="#"><img src="img/galeri7.jpeg" alt="Zoom 7"></a></div>
+    <div id="img8" class="lightbox"><a href="#"><img src="img/galeri8.jpeg" alt="Zoom 8"></a></div>
+
+    <!-- Tombol Kembali -->
+    <a class="btn-kembali" href="index.html">← Kembali ke Beranda</a>
+
+    <footer>&copy; 2025 Kristina Mila | Budaya Dayak Ketungau Tesaek</footer>
+  </div>
+
+</body>
+</html>

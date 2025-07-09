@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kristina Mila</title>
+
+  <!-- Font & Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe3f9, #f3c1ff);
+      color: #4a004e;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Sosial Media */
+    .medsos {
+      background: #da77f2;
+      padding: 10px 0;
+    }
+
+    .medsos ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      justify-content: flex-end;
+    }
+
+    .medsos ul li a {
+      color: #fff;
+      font-size: 1.2em;
+      transition: 0.3s;
+    }
+
+    .medsos ul li a:hover {
+      color: #ffd6ff;
+    }
+
+    /* Header Navigasi */
+    header {
+      background: #fff0fa;
+      border-bottom: 2px solid #f5d0ff;
+      padding: 20px 0;
+    }
+
+    header h1 a {
+      text-decoration: none;
+      color: #b02ddc;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    header .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin-top: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    header ul li a {
+      text-decoration: none;
+      color: #5e3c60;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    header ul li a:hover,
+    header ul li.active a {
+      color: #d94eff;
+      font-weight: bold;
+    }
+
+    /* Banner */
+    .banner {
+      background: url('https://images.unsplash.com/photo-1606055856315-020f74b4d89f') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+      position: relative;
+    }
+
+    .banner-text {
+      text-align: center;
+    }
+
+    .welcome-text {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      animation: fadeDown 2s ease forwards;
+      opacity: 0;
+      transform: translateY(-20px);
+      background: rgba(0,0,0,0.4);
+      padding: 8px 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .typing-text {
+      font-size: 2em;
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards;
+      background-color: rgba(0,0,0,0.5);
+      padding: 15px 30px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes fadeDown {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Tentang Saya */
+    .about {
+      padding: 60px 0;
+      text-align: center;
+      background-color: #ffe6f7;
+    }
+
+    .about h2 {
+      color: #922bcc;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 1.1em;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+      color: #3d003f;
+    }
+
+    /* Footer */
+    footer {
+      background: #da77f2;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    footer small {
+      font-size: 0.9em;
+    }
+
+    /* Snow Effect */
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      z-index: 9999;
+      user-select: none;
+      color: #fff;
+      font-size: 1em;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(100vh); opacity: 0; }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .banner h2 {
+        font-size: 1.5em;
+        padding: 8px 15px;
+      }
+
+      .about {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sosial Media -->
+  <div class="medsos">
+    <div class="container">
+      <ul>
+        <li><a href="https://www.tiktok.com/@christinameyla055" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+        <li><a href="https://www.instagram.com/_milmylaaaaa" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <h1><a href="index.html">SUKU DAYAK KETUNGGAU TESAEK</a></h1>
+      <ul>
+        <li class="active"><a href="index.html">BERANDA</a></li>
+        <li><a href="artikel.html">ARTIKEL</a></li>
+        <li><a href="profil.html">PROFIL</a></li>
+        <li><a href="kontak.html">KONTAK</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner-text">
+      <p class="welcome-text">Welcome to Website Kristina Mila</p>
+      <h2 class="typing-text">Mengenal Budaya Dayak Ketungau Tesaek</h2>
+    </div>
+  </section>
+
+  <!-- Tentang Saya -->
+  <section class="about">
+    <div class="container">
+      <h2>Tentang Saya</h2>
+      <p>
+        Halo! Saya <strong>Kristina Mila</strong>, seorang mahasiswi dari ITKK Sekadau. Saya membuat website ini untuk memperkenalkan budaya Suku Dayak Ketungau Tesaek yang kaya akan nilai tradisi, seni, dan sejarah. Harapan saya, generasi muda dapat lebih mengenal dan melestarikan budaya lokal yang mulai jarang dikenal ini.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 - Kristina Mila | Website Budaya Dayak Ketungau Tesaek</small>
+    </div>
+  </footer>
+
+  <!-- Salju -->
+  <script>
+    function createSnowflake() {
+      const snowflake = document.createElement('div');
+      snowflake.classList.add('snowflake');
+      snowflake.style.left = Math.random() * window.innerWidth + 'px';
+      snowflake.style.animationDuration = (Math.random() * 3 + 2) + 's';
+      snowflake.style.fontSize = (Math.random() * 10 + 10) + 'px';
+      snowflake.textContent = '❄️';
+      document.body.appendChild(snowflake);
+
+      setTimeout(() => {
+        snowflake.remove();
+      }, 5000);
+    }
+
+    setInterval(createSnowflake, 200);
+  </script>
+
+</body>
+</html>
